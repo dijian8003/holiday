@@ -1,0 +1,31 @@
+spring:
+  jpa:
+    database: oracle
+    show-sql: false
+    hibernate:
+      ddl-auto: update
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@192.168.3.134:1521:asc
+    username: ud
+    password: ud
+  mail:
+    host: mail.agilesc.com.cn
+    username: dijian@agilesc.com.cn
+    password: Mr123456
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          timeout: 25000
+mail:
+  to: dijian@agilesc.com.cn
+
+logging:
+  level:
+    com.asc.holiday: debug
+
+
+
+
